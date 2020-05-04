@@ -1,0 +1,17 @@
+<%= form_with(model: dumy, local: true) do |form| %>
+  <% if dumy.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(dumy.errors.count, "error") %> prohibited this dumy from being saved:</h2>
+
+      <ul>
+      <% dumy.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

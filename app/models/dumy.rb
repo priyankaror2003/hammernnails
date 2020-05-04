@@ -1,0 +1,2 @@
+class Dumy < ApplicationRecord
+end
